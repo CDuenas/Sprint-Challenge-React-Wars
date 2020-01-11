@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React attempts to solve the problem that large applications like facebook have with constant change of data.
+
 - [ ] What does it mean to _think_ in react?
+
+Building small components to put together a large scale application.
 
 - [ ] Describe state.
 
+State is an object that represents the parts of the app that can change.
+
 - [ ] Describe props.
 
+Props is a shortened version of properties and they are used for passing data from one component to another. 
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are anything that affects something outside of the scope of the current function that's being executed. We use the useEffect Hook to sync effects when there are changes to state or props.
 
 ## Project Set Up
 
