@@ -1,16 +1,22 @@
 import React from "react";
-import { Card, CardText, CardBody, CardTitle, } from "reactstrap";
+import { Toast, ToastBody, ToastHeader } from "reactstrap";
+import styled, { css } from "styled-components";
+
+const StyledDiv = styled.div`
+display: flex;
+`
 
 const PersonCard = props => {
     return (
-        <Card>
-            <CardBody className="person-card">
-                <CardTitle>Name: {props.name}</CardTitle>
-                <CardText>Birth Year: {props.year}</CardText>
-                <CardText>Height: {props.height}</CardText>
-                <CardText>Mass: {props.mass}</CardText>
-            </CardBody>
-        </Card>
+        <Toast >
+            <StyledDiv>
+                <ToastHeader>Name: {props.name}</ToastHeader>
+                    <ToastBody>Birth Year: {props.year}</ToastBody>
+                    <ToastBody> Height: {props.height}</ToastBody>
+                    <ToastBody> Mass: {props.mass}</ToastBody>
+            </StyledDiv>
+        </Toast>
+        
     )
 }
 
